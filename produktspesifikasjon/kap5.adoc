@@ -1,5 +1,5 @@
 // Start of UML-model
-=== Pakke: «ApplicationSchema» FKB-Arealbruk-5.0.1
+=== Pakke: «ApplicationSchema» FKB-Arealbruk-5.0.2
 *Definisjon:* Datamodell for produktspesifikasjonen FKB-Arealbruk. FKB-Arealbruk beskriver den fysiske bruken av et areal, f.eks. industriområder, campingplasser og parker. Datasettet er ikke heldekkende.
  
 [discrete]
@@ -37,7 +37,7 @@
 |http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Arealbruk/5.0
  
 |version
-|5.0.1
+|5.0.2
  
 |xmlns
 |app
@@ -220,7 +220,7 @@ SOSI_navn: VERIFISERINGSDATO +
 |<<registreringsversjon,«CodeList» Registreringsversjon>>
 |Profilparametre i tagged values: 
 |
-defautCodeSpace: https://register.geonorge.no/sosi-kodelister/fkb/generell/5.0/registreringsversjon + 
+defaultCodeSpace: https://register.geonorge.no/sosi-kodelister/fkb/generell/5.0/registreringsversjon + 
 SOSI_datatype: T + 
 SOSI_lengde: 10 + 
 SOSI_navn: REGISTRERINGSVERSJON + 
@@ -272,9 +272,9 @@ SOSI_navn: KVALITET +
 |Subtyper:
 |<<arealbrukgenerell,«FeatureType» ArealbrukGenerell>> +
 |Realisering av: 
-|/SOSI Model/SOSI Generell objektkatalog/FKB Generell del/FKB Generell del-5.0/Generelle elementer::«FeatureType» Fellesegenskaper +
-|Realisering av: 
 |«ApplicationSchema» Generelle typer 5.1/SOSI_Fellesegenskaper og SOSI_Objekt::«FeatureType» SOSI_Objekt +
+|Realisering av: 
+|/SOSI Model/SOSI Generell objektkatalog/FKB Generell del/FKB Generell del-5.0/Generelle elementer::«FeatureType» Fellesegenskaper +
 |===
  
 '''
@@ -329,19 +329,19 @@ SOSI_navn: EKSTERNPEKER +
 |<<fellesegenskaper,«FeatureType» Fellesegenskaper>>
  
 |Subtyper:
-|<<industriområde,«featureType» Industriområde>> +
-<<campingplass,«featureType» Campingplass>> +
-<<grustak,«featureType» Grustak>> +
-<<steintipp,«featureType» Steintipp>> +
+|<<grustak,«featureType» Grustak>> +
+<<park,«featureType» Park>> +
 <<transformatorstasjon,«featureType» Transformatorstasjon>> +
+<<gravplass,«featureType» Gravplass>> +
+<<skytebane,«featureType» Skytebane>> +
+<<anleggsområde,«featureType» Anleggsområde>> +
+<<sportidrettplass,«featureType» SportIdrettPlass>> +
+<<industriområde,«featureType» Industriområde>> +
 <<alpinbakke,«featureType» Alpinbakke>> +
 <<golfbane,«featureType» Golfbane>> +
+<<campingplass,«featureType» Campingplass>> +
+<<steintipp,«featureType» Steintipp>> +
 <<lekeplass,«featureType» Lekeplass>> +
-<<gravplass,«featureType» Gravplass>> +
-<<park,«featureType» Park>> +
-<<skytebane,«featureType» Skytebane>> +
-<<sportidrettplass,«featureType» SportIdrettPlass>> +
-<<anleggsområde,«featureType» Anleggsområde>> +
 |===
  
 '''
