@@ -50,7 +50,7 @@ endif::[]
 
 ifeval::[{dokumentstatus} == 3]
 
-WARNING: *Utgått versjon!* Se nyeste versjon på {reginstr-url-ny} 
+WARNING: *Utgått versjon!* Se nyeste versjon på {reginstrbase-url}{datasett}/{versjon-erstatter}/{reginstr-type}_2024-01-01
 
 *Publisert*: {publisert} +
 *Denne versjonen erstatter*: {reginstr-url-erstatter} +
