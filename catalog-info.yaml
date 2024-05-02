@@ -1,0 +1,38 @@
+# nonk8s
+apiVersion: "backstage.io/v1alpha1"
+kind: "Component"
+metadata:
+  name: "prodspek_fkb_arealbruk"
+  tags:
+  - "public"
+spec:
+  type: "documentation"
+  lifecycle: "production"
+  owner: "felles_kartdatabase"
+  system: "standardisering"
+---
+apiVersion: "backstage.io/v1alpha1"
+kind: "Group"
+metadata:
+  name: "security_champion_prodspek_fkb_arealbruk"
+  title: "Security Champion prodspek_fkb_arealbruk"
+spec:
+  type: "security_champion"
+  parent: "land_security_champions"
+  members:
+  - "NilsIvarNes"
+  children:
+  - "resource:prodspek_fkb_arealbruk"
+---
+apiVersion: "backstage.io/v1alpha1"
+kind: "Resource"
+metadata:
+  name: "prodspek_fkb_arealbruk"
+  links:
+  - url: "https://github.com/kartverket/prodspek_fkb_arealbruk"
+    title: "prodspek_fkb_arealbruk på GitHub"
+spec:
+  type: "repo"
+  owner: "security_champion_prodspek_fkb_arealbruk"
+  dependencyOf:
+  - "component:prodspek_fkb_arealbruk"
